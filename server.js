@@ -20,3 +20,4 @@ app.listen(port,  ()=> {
     console.log('Server is listening');
 }
 )
+module.exports = app;

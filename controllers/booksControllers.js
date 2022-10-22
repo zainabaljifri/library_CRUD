@@ -7,7 +7,6 @@ const addBook = (req, res)=>{
         res.status(200).json(book)
     })
     .catch(err=>{
-        console.log('errorr');
         res.json(err)
     })
 }
@@ -23,7 +22,6 @@ const getAllBooks = (req, res)=>{
     })
 }
 const getBook = (req, res)=>{
-    console.log(req.params.id)
     Book.find({_id:req.params.id})
     .then(books=>{
         res.json(books)

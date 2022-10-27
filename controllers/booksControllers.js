@@ -93,7 +93,7 @@ function addFile(files, book) {
 
 //UPLOAD TO A CLOUD STORAGE (i'm storing in a github repo for simplicity)
 function uploadFileApi(content, file) {
-    let token = "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"
+    const token = process.env.token
     let data = JSON.stringify({
         "message": "upload file",
         "content": `${content}`

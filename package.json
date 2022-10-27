@@ -12,7 +12,9 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.6.7"
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.6.7",
+    "multiparty": "^4.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

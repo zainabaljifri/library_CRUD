@@ -7,19 +7,20 @@ const bookSchema = mongoose.Schema(
         },
         title: {
             type: String
-        }, 
+        },
         author: {
             type: String
-        }, 
+        },
         year_written: {
             type: Number
-        }, 
+        },
         edition: {
             type: String
-        }, 
+        },
         price: {
             type: Number,
-        }
+        },
+        uploads: { type: String }
 
     }, {
     timestamps: true

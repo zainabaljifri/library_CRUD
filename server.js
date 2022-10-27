@@ -8,7 +8,6 @@ connectDB()
 // create new app
 const app = express();
 app.use(express.json());
-// app.use(express.urlencoded({extend:false}))
 
 app.use('/books', booksRouter);
 

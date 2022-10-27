@@ -9,7 +9,7 @@ const addBook = (req, res) => {
     let form = new multiparty.Form();
     form.parse(req, function (err, fields, files) {
         const oldpath = files.uploads[0].path;
-        const newpath = path.join(__dirname, '../uploads') + '/' + files.uploads[0].originalFilename;
+        const newpath = path.join(__dirname, '../public/uploads') + '/' + files.uploads[0].originalFilename;
         const rawData = fs.readFileSync(oldpath)
             fs.writeFile(newpath, rawData, function (err) {
             if (err) console.log(err)

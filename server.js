@@ -9,7 +9,10 @@ connectDB()
 const app = express();
 app.use(express.json());
 
+app.use(express.static('public'))
+
 app.use('/books', booksRouter);
+
 
 app.use('/', function(req, res) {
     res.send('node-api works :-)');

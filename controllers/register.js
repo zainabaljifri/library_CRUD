@@ -11,7 +11,6 @@ const addUser = (req, res) => {
             userObj[name] = value.toString();
         });
         console.log(userObj);
-
         // hash the password
         bcrypt
             .hash(userObj.password, 10)
@@ -21,7 +20,6 @@ const addUser = (req, res) => {
                     email: userObj.email,
                     password: hashedPassword,
                 });
-
                 // save the new user
                 user
                     .save()
@@ -47,10 +45,7 @@ const addUser = (req, res) => {
                     e,
                 });
             });
-
-
     });
-
 };
 
 module.exports = { addUser }

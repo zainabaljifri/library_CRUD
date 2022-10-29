@@ -3,7 +3,7 @@
 Tools:
 - NodeJS 
 - Express 
-- -Mongoose 
+- Mongoose 
 - MongoDB 
 - AWS 
 - S3 

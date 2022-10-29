@@ -1,9 +1,17 @@
 # library_CRUD
 
-Tools: NodeJS, Express, Mongoose, MongoDB, AWS S3, JWT
+Tools:
+- NodeJS 
+- Express 
+- -Mongoose 
+- MongoDB 
+- AWS 
+- S3 
+- JWT
 
 You can use the URL attached to the repo to test each function separately via postman.
-P.S. It was deployed on Vercel(Serverless Functions), so be careful not to upload >6MB files. 
+
+*P.S. It was deployed on Vercel(Serverless Functions), so be careful not to upload >6MB files.* 
 
 Here are some examples
 

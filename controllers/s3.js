@@ -22,13 +22,7 @@ function uploadFile(file) {
         Key: file.originalFilename,
         ContentType: file.headers['content-type'],
     };
-    //{'error':err,'message':'The request to a Serverless Function has a payload that exceeds the maximum value (6MB)'}
-    return s3.upload(uploadParams).promise().then(book => {
-        console.log( json({'message':'seccess'}));
-    })
-    .catch(err => {
-        res.json(err)
-    }); // this will upload file to S3
+    return s3.upload(uploadParams).promise(); // this will upload file to S3
 }
 
 //DELETE FROM AWS S3

@@ -16,9 +16,11 @@ You can use the URL attached to the repo to test each function separately via po
 Here are some examples
 
 ## Add a new Book
-Method: POST
+**Method:**
 
-Request URL:
+POST
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/books/
 ```
@@ -27,9 +29,11 @@ Choose Body->form-data and fill out the fields as below
 <img width="599" alt="addBook" src="https://user-images.githubusercontent.com/80160006/198821927-519e48be-80a9-46be-ae83-31406e44c8d2.png">
 
 ## Get All Books
-Method: GET
+**Method:**
 
-Request URL:
+GET
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/books/
 ```
@@ -37,9 +41,11 @@ https://library-zainabaljifri.vercel.app/books/
 <img width="599" alt="getAllBooks" src="https://user-images.githubusercontent.com/80160006/198822825-614abf65-6ddc-4732-9385-11864a6a90c7.png">
 
 ## Update a Specific Book
-Method: PATCH
+**Method:**
 
-Request URL:
+PATCH
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/books/<book-id>
 ```
@@ -47,9 +53,11 @@ https://library-zainabaljifri.vercel.app/books/<book-id>
 <img width="600" alt="updateBook" src="https://user-images.githubusercontent.com/80160006/198822882-95482b05-fc78-42ee-ac20-f617d3379d86.png">
 
 ## Delete a Specific Book
-Method: DELETE
+**Method:**
 
-Request URL:
+DELETE
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/books/<book-id>
 ```
@@ -57,9 +65,11 @@ https://library-zainabaljifri.vercel.app/books/<book-id>
 <img width="580" alt="deleteBook" src="https://user-images.githubusercontent.com/80160006/198823429-df054d8f-c948-4322-ae42-7666c3f11d42.png">
 
 ## Register a New User
-Method: POST
+**Method:**
 
-Request URL:
+POST
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/users/register
 ```
@@ -68,9 +78,11 @@ Choose Body->form-data and fill out the fields as below
 <img width="582" alt="register" src="https://user-images.githubusercontent.com/80160006/198823274-08dc76ab-e90a-4bb7-bff0-f5e83138aa35.png">
 
 ## Login
-Method: POST
+**Method:**
 
-Request URL:
+POST
+
+**Request URL:**
 ```bash
 https://library-zainabaljifri.vercel.app/users/login
 ```

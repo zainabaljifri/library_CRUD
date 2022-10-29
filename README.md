@@ -15,7 +15,7 @@ You can use the URL attached to the repo to test each function separately via po
 
 Here are some examples
 
-## Add a new Book
+## Add a New Book
 **Method:**
 
 POST
@@ -90,7 +90,7 @@ Choose Body->form-data and fill out the fields as below
 
 <img width="575" alt="login" src="https://user-images.githubusercontent.com/80160006/198823301-0bb306b3-44bc-4ba5-a706-7e5e0e262a22.png">
 
-## Behind the scenes
+## Behind the Scenes
 Creations and modifications are reflected in the database as shown
 
 <img width="799" alt="db_books" src="https://user-images.githubusercontent.com/80160006/198823139-6dc413a5-1d7f-4992-ba43-73524effe225.png">

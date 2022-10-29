@@ -69,6 +69,7 @@ Creations and modifications are reflected in the database as shown
 
 <img width="799" alt="db_books" src="https://user-images.githubusercontent.com/80160006/198823139-6dc413a5-1d7f-4992-ba43-73524effe225.png">
 <img width="816" alt="db_users" src="https://user-images.githubusercontent.com/80160006/198823346-de3dc4e0-f6dc-4208-99dc-76f29ba6e0c0.png">
+
 and files are stored and updated in a could storage as well
 
 <img width="753" alt="aws" src="https://user-images.githubusercontent.com/80160006/198823183-e64b999d-3df5-4df6-91b3-64cc44d865ed.png">

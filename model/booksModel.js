@@ -6,7 +6,8 @@ const bookSchema = mongoose.Schema(
             type: Number
         },
         title: {
-            type: String
+            type: String,
+            required: [true, "Please provide a Book Title!"],
         },
         author: {
             type: String
@@ -20,7 +21,8 @@ const bookSchema = mongoose.Schema(
         price: {
             type: Number,
         },
-        uploads: { type: String }
+        file: { type: String },
+        fileKey: { type: String },
 
     }, {
     timestamps: true

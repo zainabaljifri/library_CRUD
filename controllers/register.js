@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const User = require("../model/usersModel");
 const multiparty = require('multiparty');
 
@@ -33,7 +33,7 @@ const addUser = (req, res) => {
                     // catch erroe if the new user wasn't added successfully to the database
                     .catch((error) => {
                         res.status(500).send({
-                            message: "Error creating user",
+                            message: "Error creating user, email address already exists",
                             error,
                         });
                     });

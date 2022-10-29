@@ -19,7 +19,7 @@ const addBook = (req, res) => {
                 res.status(200).json({'message':'book was added successfully','book':book})
             })
             .catch(err => {
-                res.json(err)
+                res.json({'error':err,'message':'The request to a Serverless Function has a payload that exceeds the maximum value (6MB)'})
             })
     });
 }

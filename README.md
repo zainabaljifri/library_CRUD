@@ -17,6 +17,7 @@ Here are some examples
 
 ## Add a new Book
 Method: POST
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/books/
@@ -27,6 +28,7 @@ Choose Body->form-data and fill out the fields as below
 
 ## Get All Books
 Method: GET
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/books/
@@ -36,6 +38,7 @@ https://library-zainabaljifri.vercel.app/books/
 
 ## Update a Specific Book
 Method: PATCH
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/books/<book-id>
@@ -45,6 +48,7 @@ https://library-zainabaljifri.vercel.app/books/<book-id>
 
 ## Delete a Specific Book
 Method: DELETE
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/books/<book-id>
@@ -54,6 +58,7 @@ https://library-zainabaljifri.vercel.app/books/<book-id>
 
 ## Register a New User
 Method: POST
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/users/register
@@ -64,6 +69,7 @@ Choose Body->form-data and fill out the fields as below
 
 ## Login
 Method: POST
+
 Request URL:
 ```bash
 https://library-zainabaljifri.vercel.app/users/login

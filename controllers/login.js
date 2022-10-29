@@ -40,10 +40,10 @@ const login = (req, res) => {
                         token,
                     });
                 })
-                // catch error if password do not match
+                // catch error if passwords do not match
                 .catch((error) => {
                     res.status(400).send({
-                        message: "Passwords does not match"
+                        message: "Passwords do not match"
                     });
                 });
         })

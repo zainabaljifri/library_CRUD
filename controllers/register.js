@@ -12,8 +12,7 @@ const addUser = (req, res) => {
         });
         console.log(userObj);
         // hash the password
-        bcrypt
-            .hash(userObj.password, 10)
+        bcrypt.hash(userObj.password, 10)
             .then((hashedPassword) => {
                 // create a new user instance and collect the data
                 const user = new User({
@@ -21,8 +20,7 @@ const addUser = (req, res) => {
                     password: hashedPassword,
                 });
                 // save the new user
-                user
-                    .save()
+                user.save()
                     // return success if the new user is added to the database successfully
                     .then((result) => {
                         res.status(201).send({

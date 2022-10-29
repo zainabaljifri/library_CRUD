@@ -26,10 +26,10 @@ function uploadFile(file) {
 }
 
 //DELETE FROM AWS S3
-function deleteFile(fileKey) {
+function deleteFile(book) {
     return s3.deleteObject({
         Bucket: bucketName,
-        Key: fileKey
+        Key: `${book['_id']}_${book.fileKey}`
     },
         function (err, data) {
             if (err) console.log(err, err.stack); // an error occurred

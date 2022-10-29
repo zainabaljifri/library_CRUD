@@ -16,6 +16,8 @@ const addBook = (req, res) => {
         });
         Book.create(book)
             .then(book => {
+                book.fileKey = `${book['_id']}_${book.fileKey}`
+                console.log(book['_id']);
                 res.status(200).json({'message':'book was added successfully','book':book})
             })
             .catch(err => {
@@ -55,7 +57,8 @@ const updateBook = (req, res) => {
         });
         let oldBook = await Book.findOneAndUpdate({_id:req.params.id}, book);
             try{
-                deleteFile(oldBook.fileKey)
+                Object.keys(files).length != 0?
+                deleteFile(oldBook):
                 res.json({'message':'book was updated successfully'})
             }
             catch{err => {
@@ -68,7 +71,7 @@ const updateBook = (req, res) => {
 const deleteBook = (req, res) => {
     Book.findByIdAndDelete(req.params.id)
         .then(book => {
-            deleteFile(book.fileKey);
+            deleteFile(book);
             res.json({'message':'book was deleted successfully'})
         })
         .catch(err => {

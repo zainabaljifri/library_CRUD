@@ -9,11 +9,11 @@ Tools:
 - S3 
 - JWT
 
-You can use the URL attached to the repo to test each function separately via postman.
+<!-- You can use the URL attached to the repo to test each function separately via postman.
 
-*P.S. It was deployed on Vercel(Serverless Functions), so be careful not to upload >6MB files.* 
+*P.S. It was deployed on Vercel(Serverless Functions), so be careful not to upload >6MB files.* -->
 
-Here are some examples
+Here are some examples to test each function separately on postman.
 
 ## Add a New Book
 **Method:**
@@ -22,7 +22,7 @@ POST
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/books/
+localhost:8000/books/
 ```
 Choose Body->form-data and fill out the fields as below
 
@@ -35,7 +35,7 @@ GET
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/books/
+localhost:8000/books/
 ```
 
 <img width="599" alt="getAllBooks" src="https://user-images.githubusercontent.com/80160006/198822825-614abf65-6ddc-4732-9385-11864a6a90c7.png">
@@ -47,7 +47,7 @@ PATCH
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/books/<book-id>
+localhost:8000/books/<book-id>
 ```
 
 <img width="600" alt="updateBook" src="https://user-images.githubusercontent.com/80160006/198822882-95482b05-fc78-42ee-ac20-f617d3379d86.png">
@@ -59,7 +59,7 @@ DELETE
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/books/<book-id>
+localhost:8000/books/<book-id>
 ```
 
 <img width="580" alt="deleteBook" src="https://user-images.githubusercontent.com/80160006/198823429-df054d8f-c948-4322-ae42-7666c3f11d42.png">
@@ -71,7 +71,7 @@ POST
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/users/register
+localhost:8000/users/register
 ```
 Choose Body->form-data and fill out the fields as below
 
@@ -84,7 +84,7 @@ POST
 
 **Request URL:**
 ```bash
-https://library-zainabaljifri.vercel.app/users/login
+localhost:8000/users/login
 ```
 Choose Body->form-data and fill out the fields as below
 

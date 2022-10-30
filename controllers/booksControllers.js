@@ -16,8 +16,6 @@ const addBook = (req, res) => {
         });
         Book.create(book)
             .then(book => {
-                book.fileKey = `${book['_id']}_${book.fileKey}`
-                console.log(book['_id']);
                 res.status(200).json({'message':'book was added successfully','book':book})
             })
             .catch(err => {

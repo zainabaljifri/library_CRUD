@@ -29,7 +29,7 @@ function uploadFile(file) {
 function deleteFile(book) {
     return s3.deleteObject({
         Bucket: bucketName,
-        Key: `${book['_id']}_${book.fileKey}`
+        Key: book.fileKey
     },
         function (err, data) {
             if (err) console.log(err, err.stack); // an error occurred

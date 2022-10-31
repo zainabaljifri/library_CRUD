@@ -5,8 +5,7 @@ Tools:
 - Express 
 - Mongoose 
 - MongoDB 
-- AWS 
-- S3 
+- AWS S3 
 - JWT
 
 <!-- You can use the URL attached to the repo to test each function separately via postman.
